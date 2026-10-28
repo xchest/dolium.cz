@@ -1,4 +1,4 @@
-/* V3: only the Hořín film background and its playback control. */
+/* Only the Hořín film background and its playback control. */
 #hero #horin-film{z-index:2;opacity:0;pointer-events:none}
 #hero #horin-film.ready{opacity:1}
 #hero #horin-film.settled{opacity:0;transition:opacity 2.8s cubic-bezier(.4,0,.2,1)}

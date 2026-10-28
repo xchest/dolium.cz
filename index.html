@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Varianta 3 · DOLIUM s.r.o. — kamenické práce pro stavby</title>
+<title>DOLIUM s.r.o. — kamenické práce pro stavby</title>
 <meta name="description" content="DOLIUM s.r.o., Praha — kamenné dlažby, schodiště, obklady, fasády, opěrné a nábřežní zdi a repase kamenných prvků. Reference od roku 2007.">
 <meta name="theme-color" content="#121b17">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -296,7 +296,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .intro{display:none}.rise,.rv{opacity:1;transform:none}
-}/* varianta 2: původní logo */.gatemark svg{height:auto;aspect-ratio:100/117;opacity:1}.gatemark::after{-webkit-mask:none;mask:none}.gateword{display:none}.gateword{width:min(calc(var(--sw) * .093),23vw);aspect-ratio:100/22}#intro .word{display:none}#intro .mark>svg{width:min(150px,34vw);height:auto}.logo svg{width:26px;height:30px}.about .wm{width:min(52vw,520px);opacity:.06}
+}/* původní logo */.gatemark svg{height:auto;aspect-ratio:100/117;opacity:1}.gatemark::after{-webkit-mask:none;mask:none}.gateword{display:none}.gateword{width:min(calc(var(--sw) * .093),23vw);aspect-ratio:100/22}#intro .word{display:none}#intro .mark>svg{width:min(150px,34vw);height:auto}.logo svg{width:26px;height:30px}.about .wm{width:min(52vw,520px);opacity:.06}
 /* v75: intro = ruční raznice na mramorové desce; výsek leží přesně na vratech, logo se zrcadlí na hladině */
 #intro .mark,#intro .drainw{display:none}
 .gatemark,.gaterefl{display:none!important}
@@ -510,7 +510,7 @@ function runLines() {
   draw(mk, MK); draw(wd, WD); tmp.remove();
   mk.querySelectorAll('.lf').forEach(e => e.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 700, delay: 1900, fill: 'both' }));
   const cl = (x, a, b) => Math.min(1, Math.max(0, (x - a) / (b - a))), io = x => x < .5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2;
-  // V3: první kresba loga → rovnou film; scéna vrat se ukáže až po ended.
+  // První kresba loga → rovnou film; scéna vrat se ukáže až po ended.
   setTimeout(endIntro, 3500);
 }
 function runSmash() {
