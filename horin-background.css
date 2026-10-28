@@ -1,0 +1,10 @@
+/* V3: only the Hořín film background and its playback control. */
+#hero #horin-film{z-index:2;opacity:0;pointer-events:none}
+#hero #horin-film.ready{opacity:1}
+#hero #horin-film.settled{opacity:0;transition:opacity 2.8s cubic-bezier(.4,0,.2,1)}
+#hero:not(.film-finished) .scene,#hero:not(.film-finished) .txt,#hero:not(.film-finished) .scrollhint{visibility:hidden}
+#hero .shade{z-index:3}
+#film-toggle{position:absolute;right:20px;bottom:20px;z-index:5;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:10px 16px;color:#fff;background:rgba(12,29,22,.8);font:inherit;font-size:12px;cursor:pointer}
+#film-toggle:focus-visible{outline:2px solid white;outline-offset:4px}
+@media(max-width:600px){#film-toggle{right:12px;bottom:18px;font-size:11px;padding:9px 12px}}
+@media(prefers-reduced-motion:reduce){#hero #horin-film{transition:none}}
