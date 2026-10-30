@@ -38,7 +38,7 @@ function drumTo(i) { if (!mob.matches) return; drumSync = true; drum.scrollTo({t
 
 function cardHTML(r) {
   const cr = r.bf && r.bf.lic ? `<span class="cr">Foto před: ${esc(r.bf.lic)}${r.ok ? ` · po: ${esc(r.lic)}` : ''}</span>` : r.ok ? `<span class="cr">Foto: ${esc(r.lic)}</span>` : r.cap ? `<span class="cr">Ilustrační foto · ${esc(r.cap)}</span>` : '';
-  const pic = (f, a) => `<img src="${img(f, 800)}" srcset="${img(f, 800)} 800w, ${img(f, 1600)} 1600w" sizes="(max-width:860px) 50vw, 420px" alt="${esc(a)}">`;
+  const pic = (f, a) => `<img src="${img(f, 800)}" srcset="${img(f, 800)} 800w, ${img(f, 1600)} 1600w" sizes="(max-width:860px) 50vw, 420px" loading="lazy" decoding="async" alt="${esc(a)}">`;
   const pred = r.bf ? `<figure>${pic(r.bf.f, r.n + ' – před')}<b>Před</b></figure>` : '';
   const yl = r.it.length ? `<div class="ylist"><h4>Další stavby ${r.y}</h4><ol>${r.it.map(x => `<li class="${x.a < +r.y ? 'run' : ''}"><b>${esc(x.n)}</b><span>${esc(x.y)} · ${esc(x.o)} · ${esc(x.p)}</span></li>`).join('')}</ol></div>` : '';
   const po = `<figure${r.bf ? ' class="af"' : ''}>${pic(r.f, r.bf ? r.n + ' – po' : r.n)}${r.bf ? '<b>Po</b>' : ''}</figure>`;
